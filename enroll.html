@@ -20,7 +20,7 @@
                 <div class="navbar-nav ">
                     <a href="index.html" class="nav-link active text-white" aria-current="page">Home</a>
                     <a href="aboutus.html" class="nav-link text-white">About Us</a>
-                    <a href="#" class="nav-link text-white">Contact Us</a>
+                    <a href="contactus.html" class="nav-link text-white">Contact Us</a>
                     <a href="#" class="nav-link text-white btn btn-primary float-end">Register</a>
                 </div>
             </div>
@@ -38,21 +38,37 @@
             <p>Looking for a place to kickstart your career in Technology ? Whether you're a local, new in town or just cruising through we've got loads of great tips and events for you.</p>
             <h1 style="text-align:center ;">Sign up today!</h1>
                  <div class="col-lg-6">
-                       <h2>Full Name:</h2>
-                       <button class="btn btn-outline-secondary rounded-0">Enter your full name</button>
+                       <form>
+                        <div class="form-group">
+                            <label for="InputFullName">Full Name</label>
+                            <input type="Full Name" class="form-control" id="InputFullName" aria-describedby="Enter your full name" placeholder="Enter your full name">
+                        </div>
+                       </form>
                  </div>
                  <div class="col-lg-6">
-                       <h2>Phone Number</h2>
-                       <button class="btn btn-outline-secondary rounded-0">+2547--------</button>
+                    <form>
+                     <div class="form-group">
+                         <label for="InputPhoneNumber">Phone Number</label>
+                         <input type="Full Name" class="form-control" id="InputFullName" aria-describedby="+2547...." placeholder="+2547...." >
+                     </div>
+                    </form>
+              </div>
+              <div class="col-lg-6">
+                <form>
+                 <div class="form-group">
+                     <label for="InputEmailAddress">Email Address</label>
+                     <input type="Full Name" class="form-control" id="InputFullName" aria-describedby="Please enter your email" placeholder="Please enter your email" >
                  </div>
-                 <div class="col-lg-6">
-                       <h2>Email Address</h2>
-                       <button class="btn btn-outline-secondary rounded-0">Please enter your email</button>
-                 </div>
-                 <div class="col-lg-6">
-                    <h2>What's your gender?</h2>
-                    <button class="btn btn-outline-secondary rounded-0">--select your gender--</button>
-                 </div>
+                </form>
+          </div>
+          <div class="col-lg-6">
+            <label for="gender">What's your gender ?</label>
+                 <select class="form-select rounded-0" aria-label="Default select example">
+                    <option selected>--select your gender--</option>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                  </select>
+          </div>
         </div>
     </div>
     <div class="container">
@@ -62,7 +78,9 @@
             </p>
             <div class="col-lg-6">
             <h2>What's your preffered course?</h2>
-            <button class="btn btn-outline-secondary rounded-0">--select your course-- <i class="bi bi-chevron-down"></i></button>
+            <select class="form-select rounded-0" aria-label="Default select example">
+                <option selected>--select your preffered course--</option>
+              </select>
             </div>
         </div>
     </div>
@@ -72,10 +90,15 @@
                policy outlined in our Terms & condition and the Privacy Policy statements.You allow Zalegram to
                use your data for communication purposes on any information related to this event.
             </p>
-            <div class="col-lg-6">
-            <p><button class="btn btn-outline-secondary rounded-0"></button>          Agree Terms and Condition</p>
+            <div class="col-lg-6 py-5">
+                <form>
+                    <div class="form-group">
+                        <input id="checkbox" type="checkbox">
+                        <label for="checkbox">Agree Terms and Condition</label>
+                    </div>
+                </form>
+            </div>         
             <button class="btn btn-primary rounded-0">submit application</button>
-            </div>
         </div>
     </div>
     <div class="container-fluid">
@@ -83,8 +106,12 @@
              <span class="text-center bg-light py-5">
             <p>Explore all the tools you need to start, run, and grow your business with events. Subscribe to get information, latest news about
             Zalegram Events</p>
-            <a href="#" class="btn btn-outline-secondary rounded-0">Your email address</a>
-            <a href="#" class="btn btn-primary rounded-0"><i class="bi bi-envelope-fill"></i> Subscribe</a>
+            <div class="col-lg-12">
+                <label for="email"></label>
+                <input type="email" placeholder="Your email address">
+                <a href="#" class="btn btn-primary rounded-0"><i class="bi bi-envelope-fill"></i> Subscribe</a>
+            </span>    
+            </div>
             </span>    
         </div>
     </div>
